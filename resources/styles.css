@@ -70,16 +70,14 @@ nav a:hover {
 .summary,
 .hero,
 .photos,
-.testimonial {
+.testimonial, .meetup {
     padding: 2rem 1rem;
 }
 
 .summary,
-.testimonial {
+.testimonial, .meetup {
     background-color: teal;
 }
-
-
 
 .summary h2 {
     color: yellow;
@@ -91,6 +89,14 @@ nav a:hover {
     color: white;
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+.summary a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.summary a:hover {
+    color: lightsalmon;
 }
 
 .photos {
@@ -106,24 +112,37 @@ nav a:hover {
 
 .testimonial {
     color: yellow;
-    height: 15rem;
+    min-height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-
 .testimonial h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.testimonial p {
 
+.testimonial p {
+    font-size: 1.25rem;
     text-align: center;
 }
 
+.meetup{
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 15rem;
+}
+
+.meetup h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 
 @media screen and (max-width:768px) {
     header {
@@ -151,7 +170,7 @@ nav a:hover {
     .summary,
     .hero,
     .photos,
-    .testimonial {
+    .testimonial,.meetup {
         padding: 1.75rem 0.75rem;
     }
 
@@ -165,13 +184,18 @@ nav a:hover {
         width: 100%;
         margin: 1.5%;
     }
-    .testimonial{
-        height: 14rem;
+
+    .testimonial {
+        min-height: 14rem;
     }
+
     .testimonial h2 {
         font-size: 2rem;
     }
-    
+    .meetup h2{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -201,8 +225,7 @@ nav a:hover {
 
     .summary,
     .hero,
-    .photos,
-    .testimonial {
+    .photos,.meetup {
         padding: 1rem 0.5rem;
     }
 
@@ -214,19 +237,34 @@ nav a:hover {
 
     .summary p {
         color: white;
-        line-height: 1.4;
+        line-height: 1.5;
         margin-bottom: 1rem;
     }
+    
 
     .photos img {
         width: 100%;
         margin: 1.5%;
     }
-    .testimonial{
-        height: 12rem;
+
+    .testimonial {
+        min-height: 12rem;
+        height: auto;
+        padding: 1rem;
     }
+
     .testimonial h2 {
         font-size: 1.75rem;
+        line-height: 1.5;
     }
-    
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+    .meetup h2{
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
 }
