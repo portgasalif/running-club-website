@@ -70,26 +70,37 @@ nav a:hover {
 .summary,
 .hero,
 .photos,
-.testimonial, .meetup {
+.testimonial,
+.meetup {
     padding: 2rem 1rem;
 }
 
 .summary,
-.testimonial, .meetup {
+.testimonial,
+.meetup {
     background-color: teal;
 }
-
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .summary h2 {
     color: yellow;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    
 }
 
 .summary p {
+    
     color: white;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
+
 .summary a {
     color: yellow;
     text-decoration: none;
@@ -110,36 +121,27 @@ nav a:hover {
     margin: 1.5%;
 }
 
-.testimonial {
+.testimonial, .meetup {
     color: yellow;
     min-height: 15rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: center; 
+    text-align: center;
 }
+
+
 .testimonial h2 {
     font-size: 2.5rem;
-    text-align: center;
     margin-bottom: 1.5rem;
 }
 
 .testimonial p {
     font-size: 1.25rem;
-    text-align: center;
 }
 
-.meetup{
-    color: yellow;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    min-height: 15rem;
-}
 
-.meetup h2{
+.meetup h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -170,12 +172,12 @@ nav a:hover {
     .summary,
     .hero,
     .photos,
-    .testimonial,.meetup {
+    .testimonial,
+    .meetup {
         padding: 1.75rem 0.75rem;
     }
 
     .summary h2 {
-        color: yellow;
         font-size: 1.75rem;
         margin-bottom: 1.25rem;
     }
@@ -192,7 +194,8 @@ nav a:hover {
     .testimonial h2 {
         font-size: 2rem;
     }
-    .meetup h2{
+
+    .meetup h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
@@ -225,12 +228,12 @@ nav a:hover {
 
     .summary,
     .hero,
-    .photos,.meetup {
+    .photos,
+    .meetup {
         padding: 1rem 0.5rem;
     }
 
     .summary h2 {
-        color: yellow;
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -240,7 +243,7 @@ nav a:hover {
         line-height: 1.5;
         margin-bottom: 1rem;
     }
-    
+
 
     .photos img {
         width: 100%;
@@ -253,7 +256,7 @@ nav a:hover {
         padding: 1rem;
     }
 
-    .testimonial h2 {
+    .testimonial h2, .meetup h2 {
         font-size: 1.75rem;
         line-height: 1.5;
     }
@@ -261,10 +264,9 @@ nav a:hover {
     .testimonial p {
         font-size: 1rem;
     }
-    .meetup h2{
-        font-size: 1.75rem;
+
+    .meetup h2 {
         margin-bottom: 1rem;
-        line-height: 1.5;
     }
 
 }
