@@ -7,7 +7,6 @@
 body {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
-    margin: 0;
     background-color: lightsalmon;
 
 }
@@ -67,10 +66,20 @@ nav a:hover {
     padding: 2rem;
 }
 
-.summary {
+
+.summary,
+.hero,
+.photos,
+.testimonial {
     padding: 2rem 1rem;
+}
+
+.summary,
+.testimonial {
     background-color: teal;
 }
+
+
 
 .summary h2 {
     color: yellow;
@@ -84,16 +93,38 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.photos{
-    padding: 2rem 1rem;
+.photos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.photos img{
+
+.photos img {
     width: 45%;
     margin: 1.5%;
 }
+
+.testimonial {
+    color: yellow;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonial h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.testimonial p {
+
+    text-align: center;
+}
+
+
 @media screen and (max-width:768px) {
     header {
         padding: 0.75rem 4%;
@@ -117,9 +148,11 @@ nav a:hover {
         padding: 1.75rem;
     }
 
-    .summary {
+    .summary,
+    .hero,
+    .photos,
+    .testimonial {
         padding: 1.75rem 0.75rem;
-        background-color: teal;
     }
 
     .summary h2 {
@@ -127,13 +160,18 @@ nav a:hover {
         font-size: 1.75rem;
         margin-bottom: 1.25rem;
     }
-    .photos{
-        padding: 1.75rem 0.75rem;
-    }
-    .photos img{
+
+    .photos img {
         width: 100%;
         margin: 1.5%;
     }
+    .testimonial{
+        height: 14rem;
+    }
+    .testimonial h2 {
+        font-size: 2rem;
+    }
+    
 }
 
 @media screen and (max-width:480px) {
@@ -161,9 +199,11 @@ nav a:hover {
         padding: 1.5rem;
     }
 
-    .summary {
+    .summary,
+    .hero,
+    .photos,
+    .testimonial {
         padding: 1rem 0.5rem;
-        background-color: teal;
     }
 
     .summary h2 {
@@ -177,11 +217,16 @@ nav a:hover {
         line-height: 1.4;
         margin-bottom: 1rem;
     }
-    .photos{
-        padding: 1.5rem 0.5rem;
-    }
-    .photos img{
+
+    .photos img {
         width: 100%;
         margin: 1.5%;
     }
+    .testimonial{
+        height: 12rem;
+    }
+    .testimonial h2 {
+        font-size: 1.75rem;
+    }
+    
 }
