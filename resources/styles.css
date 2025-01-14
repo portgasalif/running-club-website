@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     margin: 0;
     background-color: lightsalmon;
-   
+
 }
 
-header{
+header {
     display: flex;
     padding: 1rem 5%;
     background-color: teal;
@@ -22,29 +22,32 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    
+
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 1.25rem;
     list-style: none;
 }
 
-nav li{
+nav li {
     padding: 0.5rem, 1.5rem;
     margin-right: 1.5rem;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: 1.2rem;
     color: lightsalmon;
     cursor: pointer;
 }
-nav a:hover{
+
+nav a:hover {
     color: rgb(255, 221, 208);
 }
 
-.hero{
+.hero {
     background-image: url('https://images.unsplash.com/photo-1590646299329-ac2652afd477?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
@@ -55,7 +58,7 @@ nav a:hover{
     align-items: center;
 }
 
-.hero h1{
+.hero h1 {
     width: 100%;
     text-align: center;
     background-color: rgba(0.5, 0.5, 0.5, 0.5);
@@ -64,83 +67,121 @@ nav a:hover{
     padding: 2rem;
 }
 
-.summary{
+.summary {
     padding: 2rem 1rem;
     background-color: teal;
 }
-.summary h2{
+
+.summary h2 {
     color: yellow;
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
+
 .summary p {
     color: white;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
+.photos{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photos img{
+    width: 45%;
+    margin: 1.5%;
+}
 @media screen and (max-width:768px) {
-    header{
+    header {
         padding: 0.75rem 4%;
     }
-    nav a{
+
+    nav a {
         font-size: 1.1rem;
 
     }
-    nav ul{
+
+    nav ul {
         gap: 1.1rem;
     }
 
-    .hero{
+    .hero {
         height: 25rem;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 1.75rem;
         padding: 1.75rem;
     }
-    .summary{
+
+    .summary {
         padding: 1.75rem 0.75rem;
         background-color: teal;
     }
-    .summary h2{
+
+    .summary h2 {
         color: yellow;
         font-size: 1.75rem;
         margin-bottom: 1.25rem;
     }
+    .photos{
+        padding: 1.75rem 0.75rem;
+    }
+    .photos img{
+        width: 100%;
+        margin: 1.5%;
+    }
 }
 
 @media screen and (max-width:480px) {
-    header{
+    header {
         justify-content: center;
     }
-    nav li{
-       text-align: center;
+
+    nav li {
+        text-align: center;
 
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         align-items: center;
     }
-    .hero{
+
+    .hero {
         height: 20rem;
         margin-top: 6rem;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 1.5rem;
         padding: 1.5rem;
     }
-    .summary{
+
+    .summary {
         padding: 1rem 0.5rem;
         background-color: teal;
     }
-    .summary h2{
+
+    .summary h2 {
         color: yellow;
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
+
     .summary p {
         color: white;
         line-height: 1.4;
         margin-bottom: 1rem;
+    }
+    .photos{
+        padding: 1.5rem 0.5rem;
+    }
+    .photos img{
+        width: 100%;
+        margin: 1.5%;
     }
 }
